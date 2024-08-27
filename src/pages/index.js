@@ -30,7 +30,10 @@ export default function Home() {
   ];
   return (
     <BaseLayout>
-      <div className="flex flex-col items-center w-full mt-12">
+      <div
+        className="flex flex-col items-center w-full mt-12"
+        style={{ minHeight: "calc(100vh - 220px)" }}
+      >
         <section className="w-full grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, idx) => (
             <div key={idx} className="cursor-pointer">

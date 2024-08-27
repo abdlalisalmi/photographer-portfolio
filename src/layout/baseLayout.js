@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
 export default function BaseLayout({ children }) {
@@ -6,6 +7,7 @@ export default function BaseLayout({ children }) {
       <div className="w-full px-6 lg:px-12">
         <Navbar />
         {children}
+        <Footer />
       </div>
     </main>
   );
